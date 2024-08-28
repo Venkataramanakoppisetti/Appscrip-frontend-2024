@@ -1,0 +1,158 @@
+.main-container {
+    height: 70%;
+    padding: 20px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.main-heading-discrip-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.main-heading {
+    font-size: 40px;
+    color: #252020;
+    margin-bottom: 10px;
+}
+
+.main-discrip {
+    font-size: 22px;
+    color: #252020;
+    text-align: center;
+}
+
+.middle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.items-count {
+    font-weight: bold;
+}
+
+.middle-left-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sidebar-opening-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sort-select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.content-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.products-container {
+    flex: 1;
+    transition: margin-left 0.3s ease-in-out;
+    padding-left: 20px;
+}
+
+.products-container.shrink {
+    margin-left: 80px; 
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.filter-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #2980b9;
+}
+
+.customize-container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.customizable-discrip {
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 10px 0;
+}
+
+.filter-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter {
+    font-weight: bold;
+}
+
+.for {
+    color: #3498db;
+    cursor: pointer;
+}
+
+.for:hover {
+    text-decoration: underline;
+}
+
+.bottom-arrow-icon {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+
+

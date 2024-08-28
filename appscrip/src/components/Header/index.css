@@ -1,0 +1,153 @@
+.top-header-container {
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    width: 100%;
+}
+
+.top-container {
+    background-color: black;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.topo-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.top-logo {
+    height: 20px;
+}
+
+.top-text {
+    font-size: 16px;
+    color:rgba(235, 76, 107, 1);
+    margin-left: 10px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.web-logo {
+    height: 30px;
+    margin-top: 20px;
+}
+
+.web-heading {
+    font-size: 26px;
+}
+
+.elements-container {
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.element {
+    height: 22px;
+}
+
+.nav-options-container {
+    display: flex;
+    align-self: center;
+    margin-right: 150px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-list-option {
+    list-style-type: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.line {
+    border: none;
+    height: 1px;
+    box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+    background-color: #333;
+    width: 100%;
+}
+
+
+/* Existing styles above */
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .top-header-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header-top-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .web-logo {
+        margin-bottom: 10px;
+    }
+
+    .elements-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .element {
+        margin: 5px;
+    }
+
+    .nav-options-container {
+        display: none; /* Hide the navigation menu on mobile */
+    }
+
+    .top-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topo-logo-container {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .line {
+        display: none; /* Hide the line on mobile */
+    }
+}
+
+/* Tablet view */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .elements-container {
+        justify-content: center;
+    }
+
+    .nav-options-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list-option {
+        padding: 10px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+}
